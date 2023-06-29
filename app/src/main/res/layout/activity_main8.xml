@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity8">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/my"
+            android:contentDescription="@string/app_name">
+
+        </SearchView>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Акции и новости" />
+
+        <HorizontalScrollView
+            android:contentDescription="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageView10"
+                        android:layout_alignBottom="@+id/imageView10"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        app:srcCompat="@drawable/banner" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="75dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/imageView7"
+                        android:layout_alignTop="@+id/imageView7"
+                        android:layout_marginStart="31dp"
+                        android:layout_marginTop="109dp"
+                        android:text="8000 ₽"
+                        android:textColor="#ECECEC"
+                        android:textSize="19sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/imageView7"
+                        android:layout_alignTop="@+id/imageView7"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="84dp"
+                        android:text="9 исследований"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="215dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/imageView7"
+                        android:layout_alignTop="@+id/imageView7"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="23dp"
+                        android:text="Чек-ап для мужчин"
+                        android:textColor="#FFFFFF"
+                        android:textColorHighlight="#FFFFFF"
+                        android:textSize="19sp"
+                        android:textStyle="italic"
+                        tools:text="Чек-ап для мужчин" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/man" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/banner1" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="77dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="124dp"
+                        android:text="4000 ₽"
+                        android:textColor="#FDFDFD"
+                        android:textSize="19sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="157dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="21dp"
+                        android:text="Подготовка к вакцинации"
+                        android:textColor="#FFFFFF"
+                        android:textSize="19dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="158dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="73dp"
+                        android:text="Комплексное обследование\nперед вакцинацией"
+                        android:textColor="#FDFDFD" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/cardbg" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="16sp"
+                        android:text="СОЭ (венозная кровь)"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="72sp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="1 день"
+                                android:textColor="#939396"
+
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="4sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="240 ₽"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="160sp"
+                            android:layout_marginTop="4sp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#1A6FEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:letterSpacing="0.01"
+                            android:text="Добавить"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:textStyle="italic"
+                            app:cornerRadius="10sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16sp">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/cardbg" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="16sp"
+                        android:text="СОЭ (венозная кровь)"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="72sp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="1 день"
+                                android:textColor="#939396"
+
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="4sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="240 ₽"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="160sp"
+                            android:layout_marginTop="4sp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#1A6FEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:letterSpacing="0.01"
+                            android:text="Добавить"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:textStyle="italic"
+                            app:cornerRadius="10sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16sp">
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/cardbg" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="16sp"
+                        android:text="Общий анализ мочи"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="72sp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView46"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="1 день"
+                                android:textColor="#939396"
+
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView47"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="4sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="350 ₽"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="160sp"
+                            android:layout_marginTop="4sp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#1A6FEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:letterSpacing="0.01"
+                            android:text="Добавить"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:textStyle="italic"
+                            app:cornerRadius="10sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16sp">
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/cardbg" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="16sp"
+                        android:text="Тироксин свободный (Т4 свободный)"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="72sp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="1 день"
+                                android:textColor="#939396"
+
+                                android:textStyle="italic" />
+
+                            <TextView
+                                android:id="@+id/textView53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="4sp"
+                                android:fontFamily="sans-serif-thin"
+                                android:text="680 ₽"
+                                android:textColor="#000000"
+                                android:textSize="17sp"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_marginLeft="160sp"
+                            android:layout_marginTop="4sp"
+                            android:layout_weight="1"
+                            android:backgroundTint="#1A6FEE"
+                            android:fontFamily="sans-serif-thin"
+                            android:letterSpacing="0.01"
+                            android:text="Добавить"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:textStyle="italic"
+                            app:cornerRadius="10sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/tb" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/tb3" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/tb2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/tb1" />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
